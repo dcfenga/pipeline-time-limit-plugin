@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core">
+    <p>
+        The <code>timelimit</code> variable offers the function of executing the code inside the block with a determined
+        time out limit from a Pipeline script.
+        If the time limit is reached, an exception is thrown, which leads in aborting the build (unless it is caught and
+        processed somehow).
+    </p>
+    <p>
+        Methods needing a Jenkins agent will implicitly run a <code>node {…}</code> block if you have not wrapped them
+        in one.
+        It is a good idea to enclose a block of steps which should all run on the same node in such a block yourself.
+    </p>
+    <p>
+        Some methods return instances of auxiliary classes which serve as holders for an ID and which have their own
+        methods and properties.
+        Methods taking a body return any value returned by the body itself.
+        Some method parameters are optional and are enclosed with <code>[]</code>.
+        Reference:
+    </p>
+    <dl>
+        <dt>
+            <code>expire(time, unit) {…}</code>
+        </dt>
+        <dd>
+            <p>
+                Specifies the time(positive number) and unit, it should be one of the options below:
+                <dd>
+                    <code>DAYS</code>
+                </dd>
+                <dd>
+                    <code>HOURS</code>
+                </dd>
+                <dd>
+                    <code>MINUTES</code>
+                </dd>
+                <dd>
+                    <code>SECONDS</code>
+                </dd>
+                <dd>
+                    <code>MILLISECONDS</code>
+                </dd>
+                <dd>
+                    <code>MICROSECONDS</code>
+                </dd>
+                <dd>
+                    <code>NANOSECONDS</code>
+                </dd>
+            </p>
+        </dd>
+    </dl>
+</j:jelly>
