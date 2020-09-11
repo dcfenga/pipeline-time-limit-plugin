@@ -1,4 +1,4 @@
-Pipeline: Timelimit Plugin
+Pipeline: Time limit Plugin
 
 Extend the Jenkins Pipeline, add the ability to time limit a Stage execution and support
 Groovy Closure syntax.
