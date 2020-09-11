@@ -10,11 +10,11 @@
     </parent>
 
     <groupId>org.jenkins-ci.plugins</groupId>
-    <artifactId>pipeline-timelimit-plugin</artifactId>
+    <artifactId>pipeline-time-limit-plugin</artifactId>
     <version>2.6</version>
     <packaging>hpi</packaging>
 
-    <name>Pipleine: Timelimit Plugin</name>
+    <name>Pipleine: Time limit Plugin</name>
     <description>        
         Sets up time expired as global variable in Pipeline.
     </description>
